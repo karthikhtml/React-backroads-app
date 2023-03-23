@@ -476,7 +476,9 @@ Navbar
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
+
 .nav-toggle {
   background: transparent;
   border: none;
@@ -485,6 +487,15 @@ Navbar
   color: var(--clr-primary-5);
   cursor: pointer;
   transition: var(--transition);
+}
+.nav-toggle-item {
+  display: none;
+  position: relative;
+}
+.nav-toggle-ul-design {
+  position: absolute;
+  top: 50px;
+  left: 120px;
 }
 .nav-toggle:hover {
   transform: scale(1.2);
